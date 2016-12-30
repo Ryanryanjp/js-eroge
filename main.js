@@ -36,7 +36,7 @@ window.onload = function(){
                "Natural-Playboy.mp3",
                "se02_1.wav",
                "sen_ge_bom12.wav",
-               "spanking2.wav");
+               "spanking3.wav");
   txt_i = 0 //セリフの変更変数
 
   //テキストの設定
@@ -195,7 +195,7 @@ window.onload = function(){
 
       //腰を打ち付ける音の制御
       if(this.frame == 0 && txt_i < 9){
-        var sound = game.assets['spanking2.wav'].clone();
+        var sound = game.assets['spanking3.wav'].clone();
         sound.play();
       }
 
