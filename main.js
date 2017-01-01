@@ -22,14 +22,7 @@ window.onload = function(){
 
   //画面サイズの設定
   game = new Core(640,480);
-  previewCenter(game);   // ←この行で中央寄せを実施
-
-  /*// スマホの画面のサイズとゲームの画面のサイズを合わせるため
-  var scale_h = window.innerHeight / 480;
-  var scale_w = window.innerWidth / 640;
-  if (scale_h >= scale_w){game.scale = scale_w;}
-  else{game.scale = scale_h;}
-  */
+  previewCenter(game);   // <-この行で中央寄せを実施
 
   game.fps = 8; //フレームレートの設定
   game.preload("sup-anime-test0.png",
@@ -141,7 +134,6 @@ window.onload = function(){
     fuck.x = 0;
     fuck.y = 0;
     fuck.frame = 0;
-    buru = 0; //射精後のアニメーション制御用変数
 
     //fuckアニメーションの表示
     game.rootScene.addChild(fuck);
@@ -210,15 +202,8 @@ window.onload = function(){
       }
 
       //射精前のアニメーション制御
-      if(this.frame == 2){
-        this.frame = 0;
-        buru = 0;
-      }
-
-      else{
-        this.frame += 1;
-        buru = 0;
-      }
+      if(this.frame == 2){this.frame = 0;}
+      else{this.frame += 1;}
 
     });
   };
