@@ -1,4 +1,5 @@
 //eroge-test0.pyの移植です。
+//githubのテスト
 
 enchant();
 
