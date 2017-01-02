@@ -6,39 +6,25 @@ enchant();
 //この中で道具を用意する。
 window.onload = function(){
 
-  //中央揃えにするための関数
-  /*function previewCenter(game){
-    var left = ( window.innerWidth - ( game.width * game.scale )) /2;
-    var top=( window.innerHeight - ( game.height * game.scale )) /2;
-    $('#enchant-stage').css({
-      "position":"absolute",
-      "left":left+"px",
-      "top":top+"px",
-    });
-    game._pageX = left;
-    game._pageY = top;
-  }
-*/
-
   //画面サイズの設定
   game = new Core(640,480);
-  //previewCenter(game);   // <-この行で中央寄せを実施
 
-  var left = ( window.innerWidth - ( game.width * game.scale ) ) / 2;
+  //左右揃えのためのjquery
+  var left = (window.innerWidth - (game.width * game.scale)) / 2;
 $('#enchant-stage').css({
     "position":"absolute",
     "left":left+"px"
   });
-
-  var top = ( window.innerHeight - ( game.height * game.scale ) ) / 2;
+  //上下揃えのためのjquery
+  var top = (window.innerHeight - (game.height * game.scale)) / 2;
 $('#enchant-stage').css({
     "position":"absolute",
     "top":top+"px"
   });
 
+  //中央揃え
   game._pageX = left;
   game._pageY = top;
-
 
   game.fps = 8; //フレームレートの設定
   game.preload("sup-anime-test0.png",
@@ -56,7 +42,6 @@ $('#enchant-stage').css({
     if (txt.readyState == 4) {
       eroge_txt = txt.responseText;
       scenario = eroge_txt.split(/\r\n|\r|\n/);
-      console.log(scenario[10]);
     }
   }
   txt.send(null);
