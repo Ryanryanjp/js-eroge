@@ -7,7 +7,7 @@ enchant();
 window.onload = function(){
 
   //中央揃えにするための関数
-  function previewCenter(game){
+  /*function previewCenter(game){
     var left = ( window.innerWidth - ( game.width * game.scale )) /2;
     var top=( window.innerHeight - ( game.height * game.scale )) /2;
     $('#enchant-stage').css({
@@ -18,11 +18,27 @@ window.onload = function(){
     game._pageX = left;
     game._pageY = top;
   }
-
+*/
 
   //画面サイズの設定
   game = new Core(640,480);
-  previewCenter(game);   // <-この行で中央寄せを実施
+  //previewCenter(game);   // <-この行で中央寄せを実施
+
+  var left = ( window.innerWidth - ( game.width * game.scale ) ) / 2;
+$('#enchant-stage').css({
+    "position":"absolute",
+    "left":left+"px"
+  });
+
+  var top = ( window.innerHeight - ( game.height * game.scale ) ) / 2;
+$('#enchant-stage').css({
+    "position":"absolute",
+    "top":top+"px"
+  });
+
+  game._pageX = left;
+  game._pageY = top;
+
 
   game.fps = 8; //フレームレートの設定
   game.preload("sup-anime-test0.png",
