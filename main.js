@@ -41,7 +41,7 @@ $('#enchant-stage').css({
   txt.onreadystatechange = function() {
     if (txt.readyState == 4) {
       eroge_txt = txt.responseText;
-      scenario = eroge_txt.split(/\r\n|\r|\n/);
+      scenario  = eroge_txt.split(/\r\n|\r|\n/);
     }
   }
   txt.send(null);
