@@ -67,21 +67,21 @@ $('#enchant-stage').css({
       txt1 = new Label(scenario[txt_i]);
       txt1.moveTo(20,380);
       txt1.color = 'white';
-      txt1.font = "20px rounded-mplus-1p-medium";
+      txt1.font  = "20px rounded-mplus-1p-medium";
       txt1.width = 600; //勝手に改行されないようにwidthを設定する
       game.rootScene.addChild(txt1);
 
       txt2 = new Label(scenario[txt_i + 1]);
       txt2.moveTo(20,410);
       txt2.color = 'white';
-      txt2.font = "20px rounded-mplus-1p-medium";
+      txt2.font  = "20px rounded-mplus-1p-medium";
       txt2.width = 600; //勝手に改行されないようにwidthを設定する
       game.rootScene.addChild(txt2);
 
       txt3 = new Label(scenario[txt_i + 2]);
       txt3.moveTo(20,440);
       txt3.color = 'white';
-      txt3.font = "20px rounded-mplus-1p-medium";
+      txt3.font  = "20px rounded-mplus-1p-medium";
       txt3.width = 600; //勝手に改行されないようにwidthを設定する
       game.rootScene.addChild(txt3);
 
@@ -115,11 +115,11 @@ $('#enchant-stage').css({
 
     // メッセージウィンドウの準備
     var sprite  = new Sprite(640,480);
-	  var surface = new Surface(640,480);	// サーフェス生成
+    var surface = new Surface(640,480);	// サーフェス生成
 
     //エンディング用サーフェス
     end_i  = new Sprite(640,480);
-    end = new Surface(640,480);	// サーフェス生成
+    end    = new Surface(640,480); // サーフェス生成
 
     //メッセージウィンドウの設定
     surface.context.fillStyle = "black";
@@ -156,21 +156,21 @@ $('#enchant-stage').css({
     txt1 = new Label(scenario[txt_i]);
     txt1.moveTo(20,380);
     txt1.color = 'white';
-    txt1.font = "20px rounded-mplus-1p-medium";
+    txt1.font  = "20px rounded-mplus-1p-medium";
     txt1.width = 600; //勝手に改行されないようにwidthを設定する
     game.rootScene.addChild(txt1);
 
     txt2 = new Label(scenario[txt_i + 1]);
     txt2.moveTo(20,410);
     txt2.color = 'white';
-    txt2.font = "20px rounded-mplus-1p-medium";
+    txt2.font  = "20px rounded-mplus-1p-medium";
     txt2.width = 600; //勝手に改行されないようにwidthを設定する
     game.rootScene.addChild(txt2);
 
     txt3 = new Label(scenario[txt_i + 2]);
     txt3.moveTo(20,440);
     txt3.color = 'white';
-    txt3.font = "20px rounded-mplus-1p-medium";
+    txt3.font  = "20px rounded-mplus-1p-medium";
     txt3.width = 600; //勝手に改行されないようにwidthを設定する
     game.rootScene.addChild(txt3);
 
