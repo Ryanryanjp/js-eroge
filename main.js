@@ -11,13 +11,13 @@ window.onload = function(){
 
   //左右揃えのためのjquery
   var left = (window.innerWidth - (game.width * game.scale)) / 2;
-$('#enchant-stage').css({
+  $('#enchant-stage').css({
     "position":"absolute",
     "left":left+"px"
   });
   //上下揃えのためのjquery
   var top = (window.innerHeight - (game.height * game.scale)) / 2;
-$('#enchant-stage').css({
+  $('#enchant-stage').css({
     "position":"absolute",
     "top":top+"px"
   });
